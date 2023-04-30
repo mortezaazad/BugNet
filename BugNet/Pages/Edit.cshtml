@@ -1,0 +1,22 @@
+﻿@page
+@model BugNet.Pages.EditModel
+@{
+}
+
+
+<h1>Edit Bug</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="post">
+            <input asp-for="SelectedBug.Id" hidden/>
+            <input asp-for="SelectedBug.Name" class="form-control" />
+            <br />
+            <textarea asp-for="SelectedBug.Description" class="form-control"></textarea>
+            <br />
+            <input asp-for="SelectedBug.IsDone" class="check mb-3" /> Is done
+            <br />
+            <button class="btn btn-success">Save</button>
+        </form>
+    </div>
+</div>
